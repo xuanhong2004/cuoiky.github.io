@@ -1,0 +1,257 @@
+/* Reset và thiết lập cơ bản */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px; /* Cỡ chữ mặc định cho toàn bộ trang */
+}
+
+/* Cấu trúc trang sản phẩm */
+.product-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-container {
+  display: flex;
+  gap: 40px;
+}
+
+.product-image img {
+  max-width: 400px;
+  border-radius: 8px;
+  margin-left: 70px;
+}
+
+.product-details {
+  flex: 1;
+}
+
+.product-details h1 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Phần số lượng sản phẩm */
+.quantity-section {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.quantity-section label {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.quantity-btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin: 0 5px;
+  border-radius: 3px;
+  transition: background-color 0.3s;
+}
+
+.quantity-btn.small-btn {
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+.quantity-btn:hover {
+  background-color: #218838;
+}
+
+.quantity-btn.decrease,
+.quantity-btn.increase {
+  background-color: #f08c11;
+}
+
+.quantity-btn.decrease:hover,
+.quantity-btn.increase:hover {
+  background-color: #218838;
+}
+
+/* Phần thêm vào giỏ hàng */
+.add-to-cart-section {
+  margin-top: 10px;
+}
+
+.add-to-cart,
+.view-cart {
+  background-color: #f08c11;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.add-to-cart:hover,
+.view-cart:hover {
+  background-color: #27ae60;
+}
+
+/* Form thông tin */
+.form-container {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.form-container h3 {
+  color: #080e0d;
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+
+.info-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b6f5ea;
+  padding: 10px;
+  border-radius: 30px;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.info-form input {
+  border: none;
+  background-color: #3e8f89;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  margin-right: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.info-form input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.info-form button {
+  background-color: #c79200;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+}
+
+.info-form button:hover {
+  background-color: #b08000;
+}
+
+/* Thông tin sản phẩm */
+.infor {
+  text-align: center;
+  font-size: 20px;
+}
+
+.product-detail-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.product-image-section {
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+  padding: 10px;
+}
+
+.product-info-section {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin-left: 20px;
+}
+
+.product-info-section h2,
+.product-info-section h3 {
+  font-size: 1.6rem;
+  color: #014d45;
+  margin-bottom: 10px;
+}
+
+.product-info-section p,
+.product-info-section ul {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.product-info-section ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+#product-description {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Nền và lớp phủ nội dung */
+.bg.section-bg.fill.bg-fill.bg-loaded {
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-overlay {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.content-overlay h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.content-overlay p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Kiểu chữ mạnh */
+strong {
+  font-size: 1.6rem;
+  color: #014d45;
+  font-weight: normal;
+}

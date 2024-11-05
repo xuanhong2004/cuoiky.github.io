@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sản phẩm - Hoa Hồng</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="header_footer.css" />
+    <link rel="stylesheet" href="detail.css" />
+  </head>
+  <body>
+    <div id="header-placeholder"></div>
+
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="product-image">
+            <img
+              id="product-image"
+              src=""
+              alt="Hoa Hồng"
+              class="img-fluid rounded"
+            />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="product-details">
+            <h1 id="product-name" class="text-primary"></h1>
+            <div class="product-info">
+              <p id="product-description" class="lead"></p>
+            </div>
+            <p class="price h4 text-danger" id="product-price"></p>
+            <div class="quantity-section my-3">
+              <label for="quantity">Số lượng:</label>
+              <button
+                class="quantity-btn btn btn-outline-secondary btn-sm decrease"
+                onclick="changeQuantity(-1)"
+              >
+                -
+              </button>
+              <span id="quantity" class="mx-2">1</span>
+              <button
+                class="quantity-btn btn btn-outline-secondary btn-sm increase"
+                onclick="changeQuantity(1)"
+              >
+                +
+              </button>
+            </div>
+            <div class="add-to-cart-section">
+              <button class="add-to-cart btn btn-success" onclick="addToCart()">
+                Thêm vào giỏ
+              </button>
+              <button
+                class="view-cart btn btn-info"
+                onclick="window.location.href='cart.html'"
+              >
+                Xem giỏ hàng
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-description mt-5">
+        <div class="product-detail-container">
+          <div class="product-info-section">
+            <h2>Mô Tả Sản Phẩm</h2>
+            <p>
+              Tặng cho người bạn yêu thương một bó hoa hồng đỏ nồng nàn, biểu
+              tượng cho tình yêu sâu đậm và chân thành. Bó hoa được thiết kế đặc
+              biệt với 12 bông hoa hồng đỏ tươi thắm, kết hợp hoàn hảo với lá
+              eucalyptus xanh mát, tạo nên sự hài hòa và sức sống.
+            </p>
+
+            <h3>Chi Tiết Thành Phần</h3>
+            <p><strong>Hoa:</strong></p>
+            <ul>
+              <li>12 bông hồng đỏ</li>
+              <li>3 bông hoa baby trắng (để tạo điểm nhấn nhẹ nhàng)</li>
+            </ul>
+            <p><strong>Phụ Kiện:</strong></p>
+            <ul>
+              <li>Lá eucalyptus tươi</li>
+              <li>Dây ruy băng satin màu trắng, tạo nên sự sang trọng</li>
+            </ul>
+
+            <h3>Kích Thước</h3>
+            <p>
+              Chiều cao: khoảng 40 cm<br />Đường kính: khoảng 30 cm<br />Phù hợp
+              để cầm tay, đặt trên bàn, hoặc trang trí trong không gian sống.
+            </p>
+
+            <h3>Ý Nghĩa</h3>
+            <p>
+              Hoa hồng đỏ không chỉ là biểu tượng của tình yêu mà còn thể hiện
+              sự trân trọng và tôn vinh những khoảnh khắc đẹp trong cuộc sống.
+              Đây là món quà lý tưởng cho các dịp như sinh nhật, kỷ niệm, ngày
+              Valentine, hoặc chỉ đơn giản là để bày tỏ tình cảm.
+            </p>
+
+            <h3>Hướng Dẫn Bảo Quản</h3>
+            <p>
+              Để hoa trong nước sạch và thay nước mỗi ngày để hoa tươi lâu
+              hơn.<br />Tránh đặt hoa ở nơi có ánh nắng trực tiếp hoặc nơi có
+              gió mạnh.
+            </p>
+
+            <h3>Dịch Vụ Giao Hàng</h3>
+            <p>
+              Chúng tôi cung cấp dịch vụ giao hàng tận nơi trong vòng 2 giờ sau
+              khi đặt hàng. Nếu bạn cần giao vào một thời điểm cụ thể, hãy cho
+              chúng tôi biết để đảm bảo bó hoa đến tay người nhận đúng lúc.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+      let productId = "hoa-hong-001";
+    </script>
+    <script src="detail.js"></script>
+  </body>
+</html>

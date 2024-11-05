@@ -1,0 +1,16 @@
+[
+  {
+    "id": "hoa-hong-001",
+    "name": "Hoa Hồng",
+    "price": 190000,
+    "image": "/baitapnhom/SanPham/HH1.jpg",
+    "description": "Mã sản phẩm: HH001\nHoa hồng luôn là biểu tượng vĩnh cửu của tình yêu và sự tinh tế. Và khi bạn muốn tặng một món quà độc đáo và đầy ý nghĩa, đây chính là sự lựa chọn hoàn hảo."
+  },
+  {
+    "id": "hoa-hong-002",
+    "name": "Hoa Hồng",
+    "price": 190000,
+    "image": "/baitapnhom/SanPham/HH2.jpeg",
+    "description": "Mã sản phẩm: HH002\nHoa hồng luôn là biểu tượng vĩnh cửu của tình yêu và sự tinh tế. Và khi bạn muốn tặng một món quà độc đáo và đầy ý nghĩa, đây chính là sự lựa chọn hoàn hảo."
+  }
+]

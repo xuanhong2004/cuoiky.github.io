@@ -1,0 +1,128 @@
+/* Đảm bảo reset CSS được áp dụng */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* Container và Card */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 20px;
+  padding: 50px 0;
+}
+
+.container .card {
+  flex: 0 0 calc(33.333% - 20px);
+  box-sizing: border-box;
+  width: 350px;
+  height: 350px;
+  background: azure;
+  border-radius: 20px;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+}
+
+.container .card .imgBx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 220px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 20px auto 0;
+}
+
+.container .card .imgBx:hover {
+  top: -20px;
+}
+
+.container .card .imgBx img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.container .card .imgBx:hover img {
+  transform: scale(1.1);
+}
+
+.container .card .content {
+  position: absolute;
+  top: 252px;
+  width: 100%;
+  padding: 0 30px;
+  text-align: center;
+}
+
+.container .card .content p {
+  font-size: 20px;
+}
+
+/* Form thông tin */
+.form-container {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.form-container h3 {
+  color: #080e0d;
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+
+.info-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b6f5ea;
+  padding: 10px;
+  border-radius: 30px;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.info-form input {
+  border: none;
+  background-color: #3e8f89;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  margin-right: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.info-form input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.info-form button {
+  background-color: #c79200;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+}
+
+.info-form button:hover {
+  background-color: #b08000;
+}
+
+/* Nội dung và Tiêu đề */
+.noidung {
+  text-align: center;
+  font-family: san serif;
+  font-size: 20px;
+}
+
+h1 {
+  text-align: center;
+}
